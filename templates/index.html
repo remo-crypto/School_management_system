@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h1>Welcome to School Management System</h1>
+            </div>
+            <div class="card-body">
+                <p class="lead">Manage student information, exam results, and more with our comprehensive school management system.</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Students</h5>
+                                <p class="card-text">View and manage student records</p>
+                                <a href="{{ url_for('students') }}" class="btn btn-primary">View Students</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Add Student</h5>
+                                <p class="card-text">Add new student to the system</p>
+                                <a href="{{ url_for('add_student') }}" class="btn btn-success">Add Student</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Exam Results</h5>
+                                <p class="card-text">View and manage exam results</p>
+                                <a href="{{ url_for('results') }}" class="btn btn-info">View Results</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}</content>
+<parameter name="filePath">c:\Users\Anansing Basumatary\School_Management\templates\index.html

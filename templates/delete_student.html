@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h2>Delete Student</h2>
+            </div>
+            <div class="card-body">
+                <form method="POST">
+                    <div class="mb-3">
+                        <label for="admin_no" class="form-label">Admin No</label>
+                        <input type="text" class="form-control" id="admin_no" name="admin_no" required>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Delete Student</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}</content>
+<parameter name="filePath">c:\Users\Anansing Basumatary\School_Management\templates\delete_student.html
